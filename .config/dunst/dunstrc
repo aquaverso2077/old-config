@@ -21,7 +21,6 @@
     horizontal_padding = 8
     separator_color = "#83a598"
     startup_notification = false
-    # https://github.com/knopwob/dunst/issues/26#issuecomment-36159395
     icon_position = right
     max_icon_size = 96  
     #icon_folders = /usr/share/icons/elementary/actions/16/   
