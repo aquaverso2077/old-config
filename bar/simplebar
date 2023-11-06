@@ -5,19 +5,23 @@ sep(){
 echo -e "●"
 }
 
+# ARCH UPD
+upd(){
+  upd="$(checkupdates | wc -l)"
+  echo -e "PKG $upd"
+}
+
 # HDD
 hdd() {
  hdd="$(df -h | awk 'NR==6{print $4}')"
  echo -e "HDD $hdd"
 }
 
-# VOL
 vol(){
  vol=`amixer get Master | awk -F'[][]' 'END{ print $6 $2 }' | sed 's/on//g'`
  echo -e "VOL $vol" 
 } 
  
-# BAT
 bat(){
 	for battery in /sys/class/power_supply/BAT?*; do
 		# If non-first battery, print a space separator.
@@ -39,13 +43,18 @@ bat(){
 	done && printf "\\n"
 }
 
-# DATE
+# Date && clock :
 dat(){
 	date="$(date +"%H:%M"| sed 's/  / /g')"
 	echo -e "$date"
 }
 
-# CPU
+# Cpu Temp :
+tmp(){
+	sensors | awk '/Core 0/ {print "" $3}'
+}
+
+# Cpu Usage :
 cpu(){
 	read cpu a b c previdle rest < /proc/stat
 	prevtotal=$((a+b+c+previdle))
@@ -56,21 +65,27 @@ cpu(){
 	echo -e "CPU $cpu%"
 }
 
-# BRG
+# Keybord Layout :
+key(){
+	kb="$(xkb-switch)" || exit 1
+	echo " $kb"
+}
+
+# Screen Light :
 lit(){
 	#lit="$(xbacklight | sed 's/\..*//g')"
-	#echo "BRG $lit%"
+	#echo " $lit%"
 	lit="$(brightnessctl | grep -oP '[^()]+%')"
 	echo "BRG $lit"	
 }
 
-# MEM
+# Memory :
 mem(){
 	mem="$(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
 	echo -e "MEM $mem"
 }
 
-# TRAFFIC
+# Network traffic
 nettrf(){
 	
 	update() {
@@ -93,6 +108,6 @@ nettrf(){
 
 while true; do
 
-	xsetroot -name " $(sep) [$(nettrf)] $(sep) $(hdd) $(sep) $(cpu) $(sep) $(mem) $(sep) $(vol) $(sep) $(lit) $(sep) $(dat) $(sep) "
+  xsetroot -name " $(sep) [$(nettrf)] $(sep) $(hdd) $(sep) $(cpu) $(sep) $(mem) $(sep) $(vol) $(sep) $(lit) $(sep) $(upd) $(sep) $(dat) $(sep) "
   sleep 0.2
 done &
