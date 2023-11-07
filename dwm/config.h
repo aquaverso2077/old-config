@@ -68,11 +68,14 @@ static const char *downvol[]    = { "amixer",  "set", "Master", "5%-", NULL };
 static const char *mutevol[]    = { "amixer", "set", "Master", "toggle", NULL };
 static const char *brupcmd[]    = { "brightnessctl", "set", "10%+", NULL };
 static const char *brdowncmd[]  = { "brightnessctl", "set", "10%-", NULL };
-static const char *cmdprint[]  = { "scrot", "-d1", "/home/aquaverso/%Y-%m-%d-%s_$wx$h.jpg", NULL };
+static const char *cmdprint[]   = { "scrot", "-d1", "/home/aquaverso/%Y-%m-%d-%s_$wx$h.jpg", NULL };
+static const char *powermcmd[]  = { "/home/aquaverso/.config/rofi/powerm/powermenu.sh", NULL };
 
 
 static const Key keys[] = {
 
+  { MODKEY,                  XK_x,       spawn,          { .v = powermcmd } },
+  { MODKEY,                  XK_F3,      spawn,          { .v = brupcmd } },
   { 0,                       XK_F12,     spawn,          { .v = cmdprint } },
   { 0,                       XK_F2,      spawn,          { .v = webcmd } },
   { 0,                       XK_F3,      spawn,          { .v = filcmd } },
@@ -114,7 +117,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_x,      quit,           {0} },
+/*	{ MODKEY|ShiftMask,             XK_x,      quit,           {0} },*/
 };
 
 /* button definitions */
