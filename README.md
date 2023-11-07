@@ -5,7 +5,8 @@ patch: gruvbox | scroll
 # DMENU
 patch: gruvbox
 
-![image](https://github.com/aquaverso2077/dots/assets/149948716/95c79fcf-cc4d-4238-8cfa-997e5368cd7a)
+![image](https://github.com/aquaverso2077/dots/assets/149948716/5d5d38c8-5b02-4e7d-a3b2-252162e25e7d)
+
 
 
 
