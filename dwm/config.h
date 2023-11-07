@@ -69,7 +69,7 @@ static const char *downvol[]    = { "amixer",  "set", "Master", "5%-", NULL };
 static const char *mutevol[]    = { "amixer", "set", "Master", "toggle", NULL };
 static const char *brupcmd[]    = { "brightnessctl", "set", "10%+", NULL };
 static const char *brdowncmd[]  = { "brightnessctl", "set", "10%-", NULL };
-static const char *cmdprint[]   = { "scrot", "-d1", "/home/aquaverso/%Y-%m-%d-%s_$wx$h.jpg", NULL };
+static const char *cmdprint[]   = { "scrot", "-d1", "/home/aquaverso/%Y-%m-%d-%s_$wx$h.png", NULL };
 static const char *powermcmd[]  = { "/home/aquaverso/.config/rofi/powerm/powermenu.sh", NULL };
 
 
