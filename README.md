@@ -1,3 +1,5 @@
 # DWM
-![image](https://github.com/aquaverso2077/dots/assets/149948716/2de7a980-4ea5-4b24-93cf-8d4f05dc80b6)
-![image](https://github.com/aquaverso2077/dots/assets/149948716/a285458d-2f84-4a61-a34e-2b465ab00afa)
+![image](https://github.com/aquaverso2077/dots/assets/149948716/007c6ce6-060c-4388-a984-bc6d3634285c)
+![image](https://github.com/aquaverso2077/dots/assets/149948716/40ffb07a-7db6-4d56-aac0-c723d4fc45a4)
+
+
