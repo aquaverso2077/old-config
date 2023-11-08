@@ -1,5 +1,5 @@
 [global]
-    font = "Iosevka Term 12"
+    font = "Iosevka Term 10"
     format = "<b>%s</b>\n%b"
     sort = yes
     indicate_hidden = yes
@@ -17,6 +17,7 @@
     max_icon_size = 96
     icon_theme = gruvmox-dark-medium-aqua
     enable_recursive_icon_lookup = true
+    mouse_left_click = do_action
     frame_color = "#83a598"
     frame_width = 2
 
