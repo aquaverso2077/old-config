@@ -3,5 +3,5 @@ dunst &
 setxkbmap -layout us,ru -option 'grp:ctrl_shift_toggle' &
 xset r rate 250 30 &
 nitrogen --restore &
-~/.local/bin/simplebar &
+~/.local/bin/bar2 &
 exec dwm
