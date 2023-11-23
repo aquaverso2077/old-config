@@ -2,7 +2,7 @@
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 0;        /* 0 means bottom bar */
+static const int topbar             = 1;        /* 0 means bottom bar */
 static const unsigned int gappx     = 4;
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=12" };
 /* color */
@@ -66,7 +66,7 @@ static const char *webcmd[]     = { "qutebrowser", NULL };
 static const char *filcmd[]     = { "pcmanfm", NULL };
 static const char *upvol[]      = { "amixer",  "set", "Master", "5%+", NULL };
 static const char *downvol[]    = { "amixer",  "set", "Master", "5%-", NULL };
-static const char *mutevol[]    = { "amixer", "set", "Master", "toggle", NULL };
+static const char *mutevol[]    = { "amixer",  "set", "Master", "toggle", NULL };
 static const char *brupcmd[]    = { "brightnessctl", "set", "10%+", NULL };
 static const char *brdowncmd[]  = { "brightnessctl", "set", "10%-", NULL };
 static const char *cmdprint[]   = { "scrot", "-d1", "/home/aquaverso/%Y-%m-%d-%s_$wx$h.png", NULL };
@@ -84,7 +84,7 @@ static const Key keys[] = {
   { MODKEY,                       XK_F2,      spawn,          { .v = brdowncmd } },
   { MODKEY,                       XK_F8,      spawn,          { .v = upvol } },
   { MODKEY,                       XK_F7,      spawn,          { .v = downvol } },
-  { MODKEY,                       XK_F5,      spawn,          { .v = mutevol } },
+  { MODKEY,                       XK_F6,      spawn,          { .v = mutevol } },
 	/* modifier                     key        function        argument */
   { MODKEY,                       XK_p,      spawn,          { .v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          { .v = termcmd } },
