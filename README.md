@@ -5,4 +5,5 @@ patch: gruvbox | scroll
 # DMENU 🧸
 patch: gruvbox | border | center
 # SCREENSHOT 🖵
-![image](https://github.com/aquaverso2077/dots/assets/149948716/5d5d38c8-5b02-4e7d-a3b2-252162e25e7d)
+![image](https://github.com/aquaverso2077/dots/assets/149948716/cf386e43-ebc1-4c19-b86d-8497c17c4090)
+
