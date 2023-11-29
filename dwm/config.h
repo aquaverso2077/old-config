@@ -11,10 +11,16 @@ static const char col_gray2[]       = "#B16286";
 static const char col_gray3[]       = "#a89984";
 static const char col_gray4[]       = "#1d2021";
 static const char col_cyan[]        = "#83a598";
+/*color status */
+static const char col_green[]       = "#689d6a";
+static const char col_blue[]        = "#458588";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeNorm] = { col_gray1, col_blue, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+  [SchemeStatus] = { col_gray1, col_green },
+  [SchemeTagsSel]  = { col_gray4, col_cyan },
+  [SchemeTagsNorm]  = { col_gray4, col_blue },
 };
 
 /* workspace */
@@ -66,7 +72,7 @@ static const char *webcmd[]     = { "qutebrowser", NULL };
 static const char *filcmd[]     = { "pcmanfm", NULL };
 static const char *upvol[]      = { "amixer",  "set", "Master", "5%+", NULL };
 static const char *downvol[]    = { "amixer",  "set", "Master", "5%-", NULL };
-static const char *mutevol[]    = { "amixer",  "set", "Master", "toggle", NULL };
+static const char *mutevol[]    = { "amixer", "set", "Master", "toggle", NULL };
 static const char *brupcmd[]    = { "brightnessctl", "set", "10%+", NULL };
 static const char *brdowncmd[]  = { "brightnessctl", "set", "10%-", NULL };
 static const char *cmdprint[]   = { "scrot", "-d1", "/home/aquaverso/%Y-%m-%d-%s_$wx$h.png", NULL };
@@ -109,6 +115,9 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
+	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -137,4 +146,3 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
