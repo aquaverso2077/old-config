@@ -2,25 +2,25 @@
 
 # Separator
 sep(){
-echo -e "●"
+echo -e ""
 }
 
 # ARCH UPD
 upd(){
   upd="$(checkupdates | wc -l)"
-  echo -e "PKG $upd"
+  echo -e " $upd"
 }
 
 # HDD
 hdd() {
  hdd="$(df -h | awk 'NR==6{print $4}')"
- echo -e "HDD $hdd"
+ echo -e " $hdd"
 }
 
 # VOL
 vol(){
  vol=`amixer get Master | awk -F'[][]' 'END{ print $6 $2 }' | sed 's/on//g'`
- echo -e "VOL $vol" 
+ echo -e "ﭵ $vol" 
 } 
  
 bat(){
@@ -63,7 +63,7 @@ cpu(){
 	read cpu a b c idle rest < /proc/stat
 	total=$((a+b+c+idle))
 	cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
-	echo -e "CPU $cpu%"
+	echo -e " $cpu%"
 }
 
 # XKB
@@ -77,13 +77,13 @@ lit(){
 	#lit="$(xbacklight | sed 's/\..*//g')"
 	#echo " $lit%"
 	lit="$(brightnessctl | grep -oP '[^()]+%')"
-	echo "BRG $lit"	
+	echo " $lit"	
 }
 
 # MEM
 mem(){
 	mem="$(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
-	echo -e "MEM $mem"
+	echo -e " $mem"
 }
 
 # NET
@@ -104,10 +104,11 @@ nettrf(){
 	rx=$(update /sys/class/net/[ew]*/statistics/rx_bytes)
 	tx=$(update /sys/class/net/[ew]*/statistics/tx_bytes)
 
-	printf "down %4sB up %4sB\\n" $(numfmt --to=iec $rx) $(numfmt --to=iec $tx)	
+#	printf "%4sB  %4sB\\n" $(numfmt --to=iec $rx) $(numfmt --to=iec $tx)	
+	printf " %sB\\n" $(numfmt --to=iec $rx)	
 }
 
 while true; do
-  xsetroot -name " $(sep) [$(nettrf)] $(sep) $(hdd) $(sep) $(cpu) $(sep) $(mem) $(sep) $(vol) $(sep) $(lit) $(sep) $(upd) $(sep) $(dat) $(sep) "
+  xsetroot -name " $(sep) $(nettrf) $(sep) $(hdd) $(sep) $(cpu) $(sep) $(mem) $(sep) $(vol) $(sep) $(lit) $(sep) $(upd) $(sep) $(dat) $(sep) "
   sleep 0.2
 done &
