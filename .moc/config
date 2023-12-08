@@ -1,0 +1,17 @@
+#MusicDir = ""
+Repeat = no 
+Shuffle = no
+AutoNext = yes
+SoundDriver = ALSA
+ShowHiddenFiles = no
+StartInMusicDir = yes
+HideFileExtension = no
+ShowFormat = no
+ShowTime = IfAvailable
+Theme = gruvbox_theme
+UseRCC = yes 
+UseRCCForFilesystem = yes
+SavePlaylist = yes
+PlaylistNumbering = yes
+PlaylistFullPaths = no
+#OnSongChange = /scripts/moc-notify.sh
