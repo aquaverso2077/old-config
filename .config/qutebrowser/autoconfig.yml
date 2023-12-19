@@ -20,6 +20,7 @@ settings:
   bindings.commands:
     global:
       normal:
+        ',alt+m': spawn mpv {url}
         Alt+v: back
   bindings.key_mappings:
     global:
@@ -58,21 +59,21 @@ settings:
     global: white
   colors.webpage.darkmode.enabled:
     global: false
-  colors.webpage.darkmode.grayscale.all:
-    global: false
   colors.webpage.darkmode.threshold.background:
     global: 0
   completion.favorite_paths:
     global: null
   completion.height:
     global: 50%
+  completion.scrollbar.width:
+    global: 12
   content.autoplay:
     global: false
   content.blocking.hosts.lists:
     global:
     - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
   content.blocking.method:
-    global: adblock
+    global: both
   content.headers.user_agent:
     global: Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko)
       {qt_key}/{qt_version} {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}
@@ -85,6 +86,8 @@ settings:
     https://fishki.net: false
   content.plugins:
     global: true
+  content.tls.certificate_errors:
+    global: ask-block-thirdparty
   content.user_stylesheets:
     global: null
   content.webgl:
@@ -118,14 +121,40 @@ settings:
     - -e
     - ranger
     - --choosefile={}
+  fonts.completion.entry:
+    global: default_size default_family
+  fonts.contextmenu:
+    global: default_size default_family
   fonts.default_family:
-    global: null
+    global: Iosevka Term
   fonts.default_size:
     global: 10pt
   fonts.downloads:
     global: default_size default_family
   fonts.prompts:
-    global: default_size sans-serif
+    global: default_size default_family
+  fonts.statusbar:
+    global: default_size default_family
+  fonts.tabs.selected:
+    global: default_size default_family
+  fonts.tabs.unselected:
+    global: default_size default_family
+  fonts.tooltip:
+    global: Iosevka Term
+  fonts.web.family.cursive:
+    global: Iosevka Term
+  fonts.web.family.fantasy:
+    global: Iosevka Term
+  fonts.web.family.fixed:
+    global: Iosevka Term
+  fonts.web.family.sans_serif:
+    global: Iosevka Term
+  fonts.web.family.serif:
+    global: Iosevka Term
+  fonts.web.family.standard:
+    global: Iosevka Term
+  fonts.web.size.default:
+    global: 16
   hints.border:
     global: '1px solid #E3BE23'
   hints.chars:
@@ -168,6 +197,8 @@ settings:
     global: normal
   tabs.new_position.related:
     global: next
+  tabs.new_position.unrelated:
+    global: last
   tabs.padding:
     global:
       bottom: 4
@@ -187,16 +218,20 @@ settings:
   tabs.title.elide:
     global: right
   tabs.title.format:
-    global: '{audio} {perc}{host}'
+    global: '{index}.{audio}{perc}{host}'
   tabs.undo_stack_size:
     global: 100
   tabs.width:
     global: 15%
+  url.auto_search:
+    global: naive
   url.default_page:
-    global: https://searx.be/
+    global: https://4pda.to/tag/pc/
   url.searchengines:
     global:
-      DEFAULT: https://searx.be/search?q={}
+      DEFAULT: https://www.ecosia.org/search?method=index&q={}
+  url.start_pages:
+    global: https://www.ecosia.org
   window.hide_decoration:
     global: false
   window.transparent:
