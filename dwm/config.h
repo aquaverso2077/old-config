@@ -2,9 +2,9 @@
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 0;        /* 0 means bottom bar */
+static const int topbar             = 1;        /* 0 means bottom bar */
 static const unsigned int gappx     = 0;
-static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=12" };
+static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=10" };
 /* color */
 static const char col_gray1[]       = "#1d2021";
 static const char col_gray2[]       = "#B16286";
@@ -12,13 +12,14 @@ static const char col_gray3[]       = "#a89984";
 static const char col_gray4[]       = "#1d2021";
 static const char col_cyan[]        = "#83a598";
 /*color status */
-static const char col_green[]       = "#689d6a";
+static const char col_green[]       = "#bcb18e";
+static const char col_text[]        = "#2e2d2c";
 static const char col_blue[]        = "#458588";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray1, col_blue, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-  [SchemeStatus] = { col_gray1, col_green },
+  [SchemeStatus] = { col_text, col_green },
   [SchemeTagsSel]  = { col_gray4, col_cyan },
   [SchemeTagsNorm]  = { col_gray4, col_blue },
 };
@@ -75,13 +76,14 @@ static const char *downvol[]    = { "amixer",  "set", "Master", "5%-", NULL };
 static const char *mutevol[]    = { "amixer", "set", "Master", "toggle", NULL };
 static const char *brupcmd[]    = { "brightnessctl", "set", "10%+", NULL };
 static const char *brdowncmd[]  = { "brightnessctl", "set", "10%-", NULL };
+static const char *redshiftcmd[]  = { "redshift", "-P", "-O" "4600", NULL };
 static const char *cmdprint[]   = { "scrot", "-d1", "/home/aquaverso/%Y-%m-%d-%s_$wx$h.png", NULL };
 static const char *powermcmd[]  = { "/home/aquaverso/.config/rofi/powerm/powermenu.sh", NULL };
 
 
 static const Key keys[] = {
-
   { MODKEY,                  XK_x,       spawn,          { .v = powermcmd } },
+  { MODKEY,                  XK_F10,     spawn,          { .v = redshiftcmd } },
   { MODKEY,                  XK_F3,      spawn,          { .v = brupcmd } },
   { 0,                       XK_F12,     spawn,          { .v = cmdprint } },
   { 0,                       XK_F2,      spawn,          { .v = webcmd } },
