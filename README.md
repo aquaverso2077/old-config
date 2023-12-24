@@ -1,9 +1,10 @@
+# Patches
 | Dwm | Dmenu | St|
 |:--: |:--:| :--:|
 | Gruvbox | Gruvbox   | Gruvbox  |
 | Colorbar | Center    | Scroll    |
 | Gaps | Border | - |
-
+---
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Gentoo](https://img.shields.io/badge/Gentoo-54487A?style=for-the-badge&logo=gentoo&logoColor=white)
 ![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
