@@ -1,3 +1,5 @@
+<p align="center"> <img src="https://github.com/aquaverso2077/dots/assets/149948716/3dbaf86a-f0b2-4853-a360-18d56349e475"/> </p> 
+
 # Patches
 | Dwm | Dmenu | St|
 |:--: |:--:| :--:|
