@@ -9,3 +9,6 @@
 |:--:|
 | ![image](https://github.com/aquaverso2077/dots/assets/149948716/0fac3da0-b893-4f28-8712-6d76c1f6cf7a) |
 | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) |
+---
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=aquaverso2077&label=Profile%20views&color=0e75b6&style=flat" alt="aquaverso2077" /> </p>
+
