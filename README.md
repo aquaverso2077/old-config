@@ -1,5 +1,3 @@
-<h1 align="center">Hi 👋, I'm AquaVerso</h1>
-
 # Patches
 | Dwm | Dmenu | St|
 |:--: |:--:| :--:|
