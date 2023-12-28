@@ -107,29 +107,33 @@ settings:
     global:
     - st
     - -e
-    - ranger
+    - vifm
     - --choosedir={}
   fileselect.multiple_files.command:
     global:
     - st
     - -e
-    - ranger
+    - vifm
     - --choosedir={}
   fileselect.single_file.command:
     global:
     - st
     - -e
-    - ranger
+    - vifm
     - --choosefile={}
   fonts.completion.entry:
     global: default_size default_family
   fonts.contextmenu:
     global: default_size default_family
   fonts.default_family:
-    global: Iosevka Term
+    global: JetBrainsMono Nerd Font
   fonts.default_size:
     global: 10pt
   fonts.downloads:
+    global: default_size default_family
+  fonts.hints:
+    global: bold default_size default_family
+  fonts.keyhint:
     global: default_size default_family
   fonts.prompts:
     global: default_size default_family
@@ -140,25 +144,29 @@ settings:
   fonts.tabs.unselected:
     global: default_size default_family
   fonts.tooltip:
-    global: Iosevka Term
+    global: JetBrainsMono Nerd Font
   fonts.web.family.cursive:
-    global: Iosevka Term
+    global: JetBrainsMono Nerd Font
   fonts.web.family.fantasy:
-    global: Iosevka Term
+    global: JetBrainsMono Nerd Font
   fonts.web.family.fixed:
-    global: Iosevka Term
+    global: JetBrainsMono Nerd Font
   fonts.web.family.sans_serif:
-    global: Iosevka Term
+    global: JetBrainsMono Nerd Font
   fonts.web.family.serif:
-    global: Iosevka Term
+    global: JetBrainsMono Nerd Font
   fonts.web.family.standard:
-    global: Iosevka Term
+    global: JetBrainsMono Nerd Font
   fonts.web.size.default:
-    global: 16
+    global: 14
+  fonts.web.size.default_fixed:
+    global: 14
   hints.border:
     global: '1px solid #E3BE23'
   hints.chars:
     global: asdfghjkl
+  hints.mode:
+    global: letter
   hints.radius:
     global: 3
   new_instance_open_target:
