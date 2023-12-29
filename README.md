@@ -1,5 +1,5 @@
 # Patches
-| DWM | DMENU | ST| SlSTATUS |
+| DWM | DMENU | ST| SLSTATUS |
 |:--: |:--:| :--:|  :--:|
 | Gruvbox | Gruvbox   | Gruvbox  | Coming |
 | Colorbar | Center    | Scroll    | Soon |
