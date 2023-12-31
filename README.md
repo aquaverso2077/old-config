@@ -1,10 +1,10 @@
 # Patches
 | DWM | DMENU | ST| SLSTATUS |
 |:-- |:--:| :--:|  --:|
-| Gruvbox | Gruvbox   | Gruvbox  | _Coming_ |
-| Colorbar | Center    | Scroll    | _Soon_ |
-| Gaps | Border | - | - |
-| - | - | - | Status2d |
+| gruvbox | gruvbox   | gruvbox  | _COMING_ |
+| colorbar | center    | scroll    | _SOON_ |
+| gaps | border | - | - |
+| - | - | - | status2d |
 ---
 ## Slstatus depends:
 + libxft
