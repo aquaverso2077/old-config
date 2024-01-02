@@ -2,7 +2,7 @@ static int topbar = 1;
 static int centered = 1;
 static int min_width = 700;
 static const char *fonts[] = {
-	"Iosevka Term:size=12"
+	"JetBrainsMono Nerd Font:size=10"
 };
 static const char *prompt      = NULL;
 static const char *colors[SchemeLast][2] = {
