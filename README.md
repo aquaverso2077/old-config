@@ -1,3 +1,9 @@
+# _*Upcoming updates*_
++ slstatus
++ new global theme
++ vifm
++ startpage
+
 # Patches
 | DWM | DMENU | ST| SLSTATUS |
 |:-- |:--:| :--:|  --:|
