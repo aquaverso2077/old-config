@@ -10,7 +10,7 @@
 | gruvbox | gruvbox   | gruvbox  | _COMING_ |
 | colorbar | center    | scroll    | _SOON_ |
 | gaps | border | - | - |
-| - | - | - | status2d |
+| pertag | - | - | status2d |
 ---
 ## DWM depends:
 + libxinerama
