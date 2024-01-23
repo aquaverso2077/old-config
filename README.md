@@ -1,6 +1,6 @@
 # _*Upcoming updates*_
 + slstatus
-+ new global theme
++ new nord theme
 + vifm
 + startpage
 
