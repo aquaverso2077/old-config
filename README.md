@@ -9,7 +9,7 @@
 |:-- |:--:| :--:|  --:|
 | gruvbox | gruvbox   | gruvbox  | _COMING_ |
 | colorbar | center    | scroll    | _SOON_ |
-| gaps | border | - | - |
+| gaps | border | vertcenter | - |
 | pertag | - | - | status2d |
 ---
 ## DWM depends:
