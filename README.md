@@ -11,6 +11,7 @@
 | colorbar | center    | scroll    | _SOON_ |
 | gaps | border | vertcenter | - |
 | pertag | - | - | status2d |
+| ~cfacts~ |
 ---
 ## DWM depends:
 + libxinerama
