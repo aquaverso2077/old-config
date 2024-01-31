@@ -3,6 +3,7 @@
 + nordtheme
 + vifm
 + startpage
++ new patches
 
 # Patches
 | DWM | DMENU | ST| SLSTATUS |
