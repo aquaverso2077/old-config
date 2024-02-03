@@ -1,6 +1,7 @@
 # _*Upcoming updates*_
 + slstatus
 + nordtheme
++ gruvboxtheme
 + vifm
 + startpage
 + patches
