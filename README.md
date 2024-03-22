@@ -28,6 +28,7 @@
 ### How Install
 >**Archlinux:**
 `sudo pacman -S base-devel libxinerama freetype2 fontconfig libxft alsa-utils brightnessctl pacman-contrib`
+
 >**Gentoo:**
 `sudo emerge --ask x11-libs/libXft x11-libs/libXinerama x11-libs/libXinerama`
 
